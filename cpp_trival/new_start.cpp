@@ -52,16 +52,15 @@
 //2 应该 定义对应的一系列运算符
 //3 注意返回值 引用还是值 bool
 //4 要求 作为非成员函数时 必须有一个类类型的形参
-// 5 
+// 5 * 与 -> 运算符 通常是类指针才会重载  -> 一定是返回一个指针
+// 类转化 运算符 一般不要多定义域 尤其是设计算术类型 二义性问题
+// explicit 函数对象 function模板 可以写一个函数表 lambda本质就是一个未命名的对象
 
 #include<iostream>
 using namespace std;
 
-ostream&operator<<(ostream&,const Widget&);
-istream&operator>>(istream&is,Widget &item);
-Widget operator+(const Widget&lhs,const Widget&rhs);
-bool operator==(const Widget&lhs,Widget&rhs);
-bool operator!=(const Widget&lhs,const Widget&rhs);
+
+
 
 class Widget{
     friend ostream&operator<<(ostream&,const Widget&);
@@ -81,6 +80,11 @@ public:
     inline Widget&operator+=(const Widget&rhs);
 };
 
+ostream&operator<<(ostream&,const Widget&);
+istream&operator>>(istream&is,Widget &item);
+Widget operator+(const Widget&lhs,const Widget&rhs);
+bool operator==(const Widget&lhs,Widget&rhs);
+bool operator!=(const Widget&lhs,const Widget&rhs);
 // 第一个<< 减少改变打印格式 一定为非成员函数
 ostream&operator<<(ostream&os,const Widget&item)
 {

@@ -8,4 +8,4 @@ Dpll algorithm and hanidoku game
 大概就是这样 还有一些不是很清楚 慢慢 摸索
 
 
-###<font color=aqua>解决了wsl2 x11 问题 网络问题 需要微软商店的 可以换作以github为源  wsl --update --web-download .eg</font>
+### <font color=aqua>解决了wsl2 x11 问题 网络问题 需要微软商店的 可以换作以github为源  wsl --update --web-download .eg</font>

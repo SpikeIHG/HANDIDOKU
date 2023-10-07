@@ -129,14 +129,6 @@ bool SET::compare(const SET&rhs)const
 int main()
 {
   
-   // 编写测例，要求创建一个能放 10个元素的集合  test
-   // 向 test中依次插入 5,6,7,6,4
-   // 从test 中删除 元素 5,8
-   // 显示 test 中的元素信息
-   // 用 test 构造另外一个 集合 aset;
-   // 显示 aset 中元素的信息
-   // 测试两个集合是否相同
-   // 集合合并操作的测试
    SET myset(10);
    myset.insert(5);
    myset.insert(6);
@@ -158,8 +150,13 @@ int main()
 
     myset.merge(urset);
     myset.displayInfo();
-    
+    cout<<'\n';
+
     return 0;
+
+
+
+
 
 }
 

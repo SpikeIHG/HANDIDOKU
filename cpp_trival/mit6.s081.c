@@ -10,7 +10,8 @@
  *  kernel 
  */
 #include<stdio.h>
+
 int mai(void)
 {
-    
+    return 100;
 }

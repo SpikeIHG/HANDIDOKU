@@ -60,10 +60,10 @@ private:
 class Bulk_Quote final:public Quote {
 public:
     Bulk_Quote()=default;
-    Bulk_Quote(const )
+    //Bulk_Quote(const )
 
 
-private:
+
 
 };
 

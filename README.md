@@ -6,3 +6,6 @@ Dpll algorithm and hanidoku game
 然后就是发布 branch 注意 在下面 可以更改 先在 github 创建一个新的分支 或者在 vscode里面建立一个新的分支 master
 然后推送到远端 就到 master里面了
 大概就是这样 还有一些不是很清楚 慢慢 摸索
+
+
+### <font color=aqua>解决了wsl2 x11 问题 网络问题 需要微软商店的 可以换作以github为源  wsl --update --web-download .eg</font>
